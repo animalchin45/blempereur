@@ -1,0 +1,41 @@
+.layout {
+    display: grid;
+    grid-template-rows: [header-start] 0rem [body-start] auto [body-end] auto [footer-end];
+    grid-template-columns: $layout-columns;
+
+    &__body {
+        animation: fadeIn $fade-in-quick ease-in-out;
+        display: grid;
+        grid-column: full-start / full-end;
+        grid-row: body-start / body-end;
+
+        &--home {
+            grid-template-rows: 75rem;
+        }
+
+        &--new-clients {
+            grid-template-rows: 30rem;
+            padding-top: 8rem;
+        }
+
+        &--therapy {
+            grid-template-rows: 30rem;
+            padding-top: 8rem;
+        }
+
+        &--about {
+            grid-template-rows: 30rem;
+            padding-top: 8rem;
+        }
+    }
+}
+
+@media (max-width: $second-break) {
+    .layout {
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

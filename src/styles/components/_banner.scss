@@ -1,0 +1,11 @@
+.banner {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+@media(max-width: $second-break) {
+    .banner {
+        display: none;
+    }
+}

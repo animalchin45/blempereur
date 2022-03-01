@@ -1,0 +1,164 @@
+.client-form {
+    display: grid;
+    grid-template-columns: $layout-columns;
+    padding-bottom: $padding-medium;
+
+    & form {
+        display: grid;
+        grid-column: col-start 3 / col-end 6;;
+        grid-template-rows: repeat(5, 8rem) 30rem 30rem;
+    }
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        grid-column: col-start 3 / col-end 6;
+        grid-row: 3 / 4;
+        margin-bottom: $margin-medium;
+    }
+    
+    & h3 {
+        grid-row: 1 / 2;
+        margin-bottom: $margin-medium;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin: $margin-small 0;
+        width: 100%;
+
+        &--comment {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            & textarea {
+                height: 100%;
+                margin-bottom: 1rem;
+                outline: none;
+                padding: $padding-small;
+                resize: none;
+                width: 100%;
+            }
+        }
+
+        &--text {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            grid-row: 7 / 8;
+            justify-content: center;
+
+            & a, p {
+                margin-bottom: $margin-medium;
+            }
+
+            & a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__input {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        
+        & input {
+            border: none;
+            border-bottom: 1px solid $color-black;
+            padding: 0 0 3px 0;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &--name {
+            width: 48%;
+        }
+
+        &--age {
+            width: 15%;
+        }
+
+        &--email {
+            width: 100%;
+        }
+
+        &--phone {
+            width: 48%;
+        }
+
+        &--referred {
+            width: 48%;
+        }
+    }
+
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        padding-right: $padding-small;
+        width: 100%;
+    }
+
+    &__submit {
+        display: flex;
+        width: 100%;
+        
+        & > * {
+            margin-right: $margin-medium;
+        }
+
+        & button {
+            margin-right: $margin-medium;
+        }
+    }
+
+    &--error {
+        color: red;
+        font-style: italic;
+    }
+
+    &--optional {
+        color: $color-gray-dark;
+        font-style: italic;
+    }
+
+    &--success {
+        align-items: center;
+        color: green;
+        display: flex;
+        justify-content: center;
+        padding: $padding-small 0;
+        transition: opacity $fade-in-slow ease-in-out;
+    }
+}
+
+@media(max-width: $second-break) {
+    .client-form {
+        display: flex;
+        padding: $padding-medium;
+
+        &__input {
+
+            &--name {
+                width: 100%;
+            }
+        }
+
+        &__row {
+
+            &--text {
+                grid-row: 8 / 9;
+            }
+        }
+
+        & form {
+            grid-template-rows: repeat(6, 8rem) 30rem 33rem;
+        }
+    }
+}

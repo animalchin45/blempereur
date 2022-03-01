@@ -1,0 +1,114 @@
+.hero {
+    align-items: center;
+    background-size: 100% auto;
+    display: grid;
+    grid-template-columns: $layout-columns;
+    grid-template-rows: 1fr 14rem;
+    justify-items: center;
+    padding-top: 8rem;
+
+    &__logo {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        grid-column: full-start / 6;
+        transform: translateX(10rem);
+
+        &--img {
+            border-radius: 20rem;
+            height: 30rem;
+            margin-bottom: $margin-medium;
+        }
+
+        &--title {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+            line-height: 6.3rem;
+        }
+    }
+
+    &__welcome {
+        display: flex;
+        flex-direction: column;
+        grid-column: 6 / full-end;
+        transform: translateX(-10rem);
+
+        & h3 {
+            margin-bottom: $margin-small;
+        }
+
+        & a {
+            margin-bottom: $margin-small;
+        }
+
+        &--brand {
+            line-height: 3rem;
+        }
+    }
+}
+
+@media (max-width: $first-break) {
+    .hero {
+        background-size: cover;
+
+        &__logo {
+            transform: translateX(0rem);   
+        }
+
+        &__welcome {
+            transform: translateX(0rem);
+        }
+    }
+}
+
+@media (min-width: $third-break) and (max-width: $second-break) {
+    .hero {
+        background-size: cover;
+
+        &__logo {
+            margin-bottom: $margin-medium;
+            transform: translateX(2rem);   
+
+            &--title {
+                line-height: 3.2rem;
+            }
+        }
+
+        &__welcome {
+            transform: translateX(-2rem);
+        }
+    }
+}
+
+@media (max-width: $third-break) {
+    .hero {
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        padding-top: 0;
+
+        &__logo {
+            align-items: center;
+            margin-bottom: $margin-medium;
+
+            &--title {
+                align-items: center;
+                line-height: 3.2rem;
+            }
+        }
+
+        &__welcome {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            &--brand {
+                display: none;
+            }
+        }
+    }
+}

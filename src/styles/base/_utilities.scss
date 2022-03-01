@@ -1,0 +1,39 @@
+.u-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.u-text-align-left {
+    text-align: left;
+}
+
+.u-text-align-right {
+    text-align: right;
+}
+
+.u-padding-top {
+    margin-top: 1rem;
+}
+
+.u-padding-right {
+    padding-right: 3rem;
+}
+
+.u-padding-bottom {
+    padding-bottom: 1rem;
+}
+
+.u-padding-left {
+    padding-left: 3rem;
+}
+
+.u-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.u-bottom-border {
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba($color-black, .25);
+        margin-bottom: $margin-medium;
+    }
+}

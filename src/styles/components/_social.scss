@@ -1,0 +1,19 @@
+.social {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    & a {
+        padding: $padding-small;
+    }
+
+    & i {
+        margin: $margin-small 0 0 $margin-small;
+    }
+}
+
+@media(max-width: $second-break) {
+    .social {
+        justify-content: center;
+    }
+}

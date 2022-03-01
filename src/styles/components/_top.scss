@@ -1,0 +1,29 @@
+.top {
+    align-items: center;
+    background-color: $color-primary-lite;
+    bottom: 3.5rem;
+    border-radius: 20rem;
+    box-shadow: 2px 2px 3px rgba($color-black, .5);
+    height: 5rem;
+    justify-content: center;
+    opacity: 1;
+    position: fixed;
+    right: 4rem;
+    transition: $fade-in-slow ease-in-out;
+    width: 5rem;
+
+    & a {
+
+        & i {
+            color: $color-white;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+@media(max-width: $second-break) {
+    .top {
+        right: 44%;
+
+    }
+}

@@ -1,0 +1,104 @@
+.articles {
+    display: grid;
+    grid-template-columns: $layout-columns;
+    padding: $padding-medium 0 $padding-medium 0;
+
+    &__content {
+        display: grid;
+        grid-column: col-start 2 / col-end 7;
+        grid-template-rows: 1fr auto;
+        padding: 0 $padding-xl $padding-medium $padding-xl;
+
+        &--left {
+            display: grid;
+            grid-template-columns: 1fr 36rem;
+        }
+
+        &--right {
+            display: grid;
+            grid-template-columns: 36rem 1fr;
+        }
+
+        &--video {
+            display: grid;
+            grid-template-rows: 1fr 36rem;
+        }
+    }
+
+    &__img {
+        background-position: center;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__video {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__subtitle {
+        transform: translateY(-30px);
+    }
+
+    & h3 {
+        margin-bottom: $margin-medium;
+    }
+
+    & h4 {
+        margin-bottom: $margin-small;
+    }
+
+    & p {
+        padding: $padding-small 0 $padding-small 0;
+    }
+    
+    & img {
+        margin: 0 $margin-medium;
+        width: 30rem;
+    }
+}
+
+@media(max-width: $second-break) {
+    .articles {
+        display: flex;
+        flex-direction: column;
+        padding: $padding-medium;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 $padding-small 0;
+
+            &--left {
+                display: flex;
+                flex-direction: column;
+                
+            }
+    
+            &--right {
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+
+        &__img {
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 30rem;
+            margin-bottom: $margin-small;
+            width: 100%;
+        }
+
+        & img {
+            margin: $margin-medium 0;
+            width: 20rem;
+        }
+
+        & video {
+            width: 95%;
+        }
+    }
+}

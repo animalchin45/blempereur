@@ -1,0 +1,10 @@
+nav {
+    align-items: center;
+    display: flex;
+    grid-column: 2 / 3;
+    justify-content: center;
+
+    & a:not(:last-child) {
+        padding-right: $padding-medium;
+    }
+}
