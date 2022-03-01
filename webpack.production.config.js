@@ -2,6 +2,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
     entry: './src/index.js',
@@ -79,6 +80,7 @@ module.exports = {
             template: 'src/index.hbs',
             description: 'Unified Therapy™ is a safe, gentle, body~mind~brain treatment approach that addresses the etiology of conditions rather than simply managing and treating symptoms.',
             favicon: './src/img/favicon.ico'
-        })
+        }),
+        new Dotenv()
     ]
 }
