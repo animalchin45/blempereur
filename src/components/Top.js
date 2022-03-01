@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 const Top = () => {
     const [showArrow, setShowArrow] = useState(false);
@@ -13,11 +15,9 @@ const Top = () => {
     window.addEventListener('scroll', changeShowArrow)
 
     return (
-        <div className="top" style={showArrow ? {display: 'flex'} : {display: 'none'}}>
-            <a href="#top">
-                <i className="fa-solid fa-chevron-up"></i>
-            </a>
-        </div>
+        <a href="#top" className="top" style={showArrow ? {display: 'flex'} : {display: 'none'}}>
+            <FontAwesomeIcon icon={faChevronUp} />
+        </a>
     )
 }
 
