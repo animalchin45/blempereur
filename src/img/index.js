@@ -12,6 +12,7 @@ import flower3 from './flower3.jpg'
 import genell from './genell.jpg'
 import krystals from './krystals.jpg'
 import orchidHero from './orchid-hero.jpg'
+import orchidHeroMobile from './orchid-hero-mobile.jpg'
 import paul from './paul.jpg'
 import therapy1 from './therapy1.jpg'
 import therapy3 from './therapy3.jpg'
@@ -33,6 +34,7 @@ export {
     genell,
     krystals,
     orchidHero,
+    orchidHeroMobile,
     paul,
     therapy1,
     therapy3,

@@ -1,21 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Testimonial from './Testimonial'
+import { useMediaQuery } from 'react-responsive'
 
 import {
-    flower1,
-    krystals,
+    // flower1,
+    // krystals,
     barbaraSquare,
-    orchidHero
+    orchidHero,
+    orchidHeroMobile
 } from '../../img/index'
 
 const Hero = () => {
+    const isMobile = useMediaQuery({ query: '(max-width: 1200px)' })
+
     return (
         <section 
             className="hero"
             style={
                 {
-                    backgroundImage: `url(${orchidHero})`
+                    backgroundImage: `url(${isMobile ? orchidHeroMobile : orchidHero})`
                 }
             }
         >
