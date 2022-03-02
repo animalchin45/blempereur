@@ -21,8 +21,6 @@ const NewClientForm = () => {
     const TEMPLATE = process.env.REACT_APP_TEMPLATE_ID
     const USER = process.env.REACT_APP_USER_ID
 
-    console.log(USER)
-
     const isDesktop = useMediaQuery({ query: '(min-width: 1200px)' })
     const isMobile = useMediaQuery({ query: '(max-width: 1200px)' })
 
