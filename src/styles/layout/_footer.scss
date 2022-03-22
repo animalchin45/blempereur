@@ -19,9 +19,12 @@
             grid-row: 1 / 2;
         }
 
-        // &--keep {
-        //     grid-column: col-start 4 / col-end 5;
-        // }
+        &--newsletter {
+            align-items: center;
+            display: grid;
+            grid-column: col-start 4 / col-end 5;
+            justify-content: center;
+        }
 
         &--contact {
             align-items: flex-end;

@@ -42,6 +42,8 @@ const MobileNav = () => {
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/team">Unified Therapy Team</Link>
                 <Social />
+                <a className='p-link' href="mailto:barbara@blempereur.com">barbara@blempereur.com</a>
+                <a className='p-link' href='http://eepurl.com/hHA2NP'>Join my newsletter</a>
             </nav> 
             <button className={hamburgerClass} onClick={() => handleHamburgerClick()} type="button">
                 <span className="hamburger-box">
