@@ -16,6 +16,7 @@ const NewClientForm = () => {
         message: ''
     })
     const [emailStatus, setEmailStatus] = useState(undefined)
+    const [loader, setLoader] = useState(false)
 
     const SERVICE = process.env.REACT_APP_SERVICE_ID
     const TEMPLATE = process.env.REACT_APP_TEMPLATE_ID
@@ -30,6 +31,7 @@ const NewClientForm = () => {
     }
 
     const onSubmit = () => {
+        setLoader(true)
         if (toSend.email !== toSend.confirmEmail) {
 
         } else {
@@ -52,6 +54,7 @@ const NewClientForm = () => {
                     message: ''
             })
                 setEmailStatus('Success!')
+                setLoader(false)
                 setTimeout(() => setEmailStatus(undefined), 4000)  
             })
             .catch((err) => {
@@ -191,6 +194,9 @@ const NewClientForm = () => {
                             >
                                 Submit
                             </button>
+                            {loader ? (
+                                <span class="loader"></span>
+                            ) : ""}
                             <p 
                                 className="client-form--success"
                                 style={emailStatus ? {opacity: 1} : {opacity: 0}}
