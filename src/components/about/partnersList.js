@@ -38,7 +38,7 @@ const partnersList = [
         url: 'https://www.instagram.com/bewellwithgenell/',
         text: [
             <p key={uuidv4()}>
-                I help folks feel & perform their best through a simple, sustainable, no b.s. approach to nutrition & lifestyle.
+                Genell is passionate about helping others and LOVES to find simple ways to integrate well-being. She is a Pn-1 nutrition coach, strength coach, Girls Gone Strong Level-1 certified coach, and a licensed massage therapist. She is also passionate about applying her knowledge to supporting women in their unique needs throughout the various stages of life.
             </p>
         ]
     }
