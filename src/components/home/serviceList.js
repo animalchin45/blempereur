@@ -13,10 +13,10 @@ const serviceList = [
         title: "Unified Therapy™",
         description: [
             <p key={uuidv4()}>
-                Unified Therapy™ is a safe, gentle, body~mind~brain treatment approach that is unique, highly interactive, and takes place on a padded treatment table.
+                Unified Therapy™ is a safe, gentle, body~mind~brain treatment approach that is unique and highly interactive.
             </p>,
             <p key={uuidv4()}>
-                The client is clothed and in a supportive, healing environment that respects protective boundaries.  Sessions are customized to fit whatever you need on the day you come in for treatment.
+                The client in a supportive, healing environment that respects protective boundaries.  Sessions are customized to fit whatever you need on the day you come in for treatment.
             </p>,
             <p key={uuidv4()}>
                 Treatment can be integrated with and complements other healing therapies including psychotherapy, chiropractic, and acupuncture.

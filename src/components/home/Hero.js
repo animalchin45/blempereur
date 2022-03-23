@@ -4,8 +4,6 @@ import Testimonial from './Testimonial'
 import { useMediaQuery } from 'react-responsive'
 
 import {
-    // flower1,
-    // krystals,
     barbaraSquare,
     orchidHero,
     orchidHeroMobile

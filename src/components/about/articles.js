@@ -16,7 +16,7 @@ const articles = [
                 She studied Unified Therapy™ under Dr Paul Canali, the founder of Unified Therapy™ and worked as a Therapist at the Evolutionary Healing Institute since 2011. Barbara became a Unified Therapy™ Healing Instructor when we began conducting our Unified Healing Retreat Seminars in 2017.
             </p>,
             <p key={uuidv4()}>
-                Now located in Beaufort, SC, Barbara has her own healing practice and continues to collaborate with Dr Paul and Jim Fazio, along with local healers and practitioners.
+                Now located in Beaufort, SC, Barbara has her own healing practice and continues to collaborate with Dr Paul along with local healers and practitioners.
             </p>,
             <p key={uuidv4()}>
                 During the pandemic, Barbara's unique talents and skills allowed her to to successfully incorporate Unifed Therapy™ sessions using Zoom.
