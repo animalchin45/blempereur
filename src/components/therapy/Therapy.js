@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../Banner'
 import articles from './articles'
-import RenderArticles from '../render-articles/RenderArticles'
+import RenderArticles from '../RenderArticles'
 import { flowerTherapy } from '../../img/index'
 
 const Therapy = () => {

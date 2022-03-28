@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 const RenderArticles = ({ articles }) => {
     const isDesktop = useMediaQuery({ query: '(min-width: 1200px)' })
 
+    // All layout types for article components
     const renderedArticles = articles.map((article) => {
         switch (article.type) {
             case "left":

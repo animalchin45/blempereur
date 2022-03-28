@@ -1,7 +1,7 @@
 import React from 'react'
 import articles from "./articles"
 import Banner from '../Banner'
-import RenderArticles from '../render-articles/RenderArticles'
+import RenderArticles from '../RenderArticles'
 import NewClientForm from './NewClientForm'
 import Questions from './Questions'
 import { flowerClient } from '../../img/index'

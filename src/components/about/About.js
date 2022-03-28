@@ -2,7 +2,7 @@ import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import Banner from '../Banner'
 import articles from './articles'
-import RenderArticles from '../render-articles/RenderArticles'
+import RenderArticles from '../RenderArticles'
 import Partners from './Partners'
 
 import { flowerAbout } from '../../img/index'

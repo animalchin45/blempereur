@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 const Services = () => {
     const renderedServices = serviceList.map((service) => {
+        // Layout for Services
         return (
             <div className="articles-column__item" key={uuidv4()}>
                 <img src={service.img} alt={service.title}></img>

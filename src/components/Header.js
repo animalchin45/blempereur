@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { flowerHeader } from '../../img/index'
+import { flowerHeader } from '../img/index'
 
 const Header = () => {
+    // Header logo and background states
     const [headerLogo, setHeaderLogo] = useState(false)
     const [headerBackgroundColor, setHeaderBackgroundColor] = useState(false)
+    // Page location variable
     const location = useLocation()
+    // Settings for on / off states of header background
     const colorOff = {
         backgroundImage: 'linear-gradient(90deg, rgba(173,214,225,0) 25%, rgba(173,214,225,0) 100%)',
         backgroundSize: 'cover',
@@ -19,6 +22,7 @@ const Header = () => {
     }
 
     useEffect(() => {
+        // When page scroll position is further than 350 pixles apply changes to header
         if (location.pathname === '/') {
             function showHeaderLogo() {
                 if (window.scrollY >= 350) {

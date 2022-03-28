@@ -1,4 +1,5 @@
 .header {
+    animation: fadeIn $fade-in-quick ease-in-out;
     display: grid;
     grid-column: full-start / full-end;
     grid-row: header-start / body-start;

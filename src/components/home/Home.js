@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive'
 import articles from './articles'
 import Hero from './Hero'
 import Services from './Services'
-import RenderArticles from '../render-articles/RenderArticles'
+import RenderArticles from '../RenderArticles'
 
 const Home = () => {
     const isDesktop = useMediaQuery({ query: '(min-width: 1200px)' })

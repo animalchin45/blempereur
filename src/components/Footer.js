@@ -1,5 +1,5 @@
 import React from 'react'
-import Social from '../Social'
+import Social from './Social'
 import { useMediaQuery } from 'react-responsive'
 
 const Footer = () => {

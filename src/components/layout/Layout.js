@@ -1,7 +1,7 @@
 import React from 'react'
-import MobileNav from './MobileNav'
-import Header from './Header'
-import Footer from './Footer'
+import MobileNav from '../MobileNav'
+import Header from '../Header'
+import Footer from '../Footer'
 import Top from '../Top'
 
 const Layout = (props) => {

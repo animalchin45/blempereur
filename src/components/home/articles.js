@@ -8,7 +8,7 @@ const articles = [
         text: [
             <p key={uuidv4()}>
                 I am glad you are here.
-                </p>,
+            </p>,
             <p key={uuidv4()}>
                 For over 20 years, I have been helping people recover from pain, anxiety, sports and work-related injuries, and the life-changing emotional assaults of childhood trauma to learn how and understand what healing really is. To become more confident, able to express their selves, live their purpose.
             </p>,

@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Social from '../Social'
+import Social from './Social'
 
 const MobileNav = () => {
+    // Mobile menu state and animation position
     const [hamburgerClass, setHamburgerClass] = useState(`hamburger hamburger--spring`)
     const [mobileNavLinksClass, setMobileNavLinksClass] = useState({
         opacity: 0,
         left: '-1200px'
     })
 
+    // Hamburger Menu close on click
     const handleMenuClick = () => {
         setHamburgerClass(`hamburger hamburger--spring`)
         setMobileNavLinksClass({
@@ -17,6 +19,7 @@ const MobileNav = () => {
         })
     }
 
+    // Hamburger open / close
     const handleHamburgerClick = () => {
         if (hamburgerClass === `hamburger hamburger--spring`) {
             setHamburgerClass(`hamburger hamburger--spring is-active`)
