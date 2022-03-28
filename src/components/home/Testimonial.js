@@ -11,8 +11,8 @@ const Testimonial = () => {
                 }
             } />
                 <div className='testimonial__text'>
-                    <h4 className='testimonial--quote'>Barbara is the best! It was a great experience working with her.</h4>
-                    <p>Anonymous</p>
+                    <h4 className='testimonial--quote'>One of the most special souls I've met on this Earth. Thank you for your amazing healing energy. Much love</h4>
+                    <p>Grazy Bliss Ferraz</p>
                 </div>
             <Quote style={
                 {
