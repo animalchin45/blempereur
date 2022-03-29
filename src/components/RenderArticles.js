@@ -1,6 +1,6 @@
 import React from "react"
 import { useMediaQuery } from 'react-responsive'
-import { v4 as uuidv4 } from 'uuid'
+import { v4 as uuid } from 'uuid'
 
 const RenderArticles = ({ articles }) => {
     const isDesktop = useMediaQuery({ query: '(min-width: 1200px)' })
@@ -10,7 +10,7 @@ const RenderArticles = ({ articles }) => {
         switch (article.type) {
             case "left":
                 return (
-                    <div className="articles__content u-bottom-border" key={uuidv4()}>
+                    <div className="articles__content u-bottom-border" key={uuid()}>
                         <div>
                             {article.title && <h3>{article.title}</h3>}
                             {article.subtitle && <h4 className="articles__subtitle">{article.subtitle}</h4>} 
@@ -21,12 +21,11 @@ const RenderArticles = ({ articles }) => {
                             </div>
                             <div style={{backgroundImage: `url(${article.img})`}} className="articles__img"></div> 
                         </div>
-                        
                     </div>
                 )
             case "right":
                 return (
-                    <div className="articles__content u-bottom-border" key={uuidv4()}>
+                    <div className="articles__content u-bottom-border" key={uuid()}>
                         <div>
                             {article.title && <h3 className={isDesktop && "u-text-align-right"}>{article.title}</h3>}
                             {article.subtitle && <h4 className="articles__subtitle">{article.subtitle}</h4>}
@@ -36,14 +35,12 @@ const RenderArticles = ({ articles }) => {
                             <div className={isDesktop && "u-padding-left"}>
                                 {article.text}
                             </div>
-                            
                         </div>
-                        
                     </div>
                 )
             case "video":
                 return (
-                    <div className="articles__content articles__content--video u-bottom-border" key={uuidv4()}>
+                    <div className="articles__content articles__content--video u-bottom-border" key={uuid()}>
                         <div>
                             <h3>{article.title}</h3>
                             {article.text}
@@ -64,7 +61,7 @@ const RenderArticles = ({ articles }) => {
                 )
             case "video-alt":
                 return (
-                    <div className="articles__content articles__content--video u-bottom-border" key={uuidv4()}>
+                    <div className="articles__content articles__content--video u-bottom-border" key={uuid()}>
                         <div>
                             {article.title && <h3>{article.title}</h3>}
                             {article.text}
@@ -78,7 +75,7 @@ const RenderArticles = ({ articles }) => {
                 )
             default:
                 return (
-                    <div className="articles__content u-bottom-border" key={uuidv4()}>
+                    <div className="articles__content u-bottom-border" key={uuid()}>
                         <div>
                             <div>
                                 {article.title && <h3>{article.title}</h3>}
