@@ -208,7 +208,7 @@ const NewClientForm = () => {
                     
                     <div className="client-form__row--text">
                         <p>
-                            Please print & fill out the new client intake forms below (click on the links below) and bring with you to your initial consult and session.
+                            Please print & fill out the new client intake forms below (click on the links below) and bring them with you to your initial consult and session.
                         </p>
                         <a 
                             href="https://storage.googleapis.com/wzukusers/user-35866045/documents/c989999e48a34dbe9fe67d324331cd93/Client%20Intake%20Form%201.pdf"
@@ -221,7 +221,7 @@ const NewClientForm = () => {
                             New Client Intake Form 2
                         </a>
                         <p>
-                            Barbara is often in treatment sessions during the day and there is a message system to receive your request. Your calls/texts/emails will be returned within 24 hours.
+                            Barbara is often in treatment sessions during the day and there is a message system to receive your request. Your inquiries will be returned within 24 hours.
                         </p>
                     </div>
                 </form>
