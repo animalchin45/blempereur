@@ -1,9 +1,9 @@
-import React from 'react'
-import Social from './Social'
-import { useMediaQuery } from 'react-responsive'
+import React from 'react';
+import Social from './Social';
+import { useMediaQuery } from 'react-responsive';
 
 const Footer = () => {
-  const isDesktop = useMediaQuery({ query: '(min-width: 1200px)' })
+  const isDesktop = useMediaQuery({ query: '(min-width: 1200px)' });
 
   return (
     <div className='footer'>
@@ -34,10 +34,12 @@ const Footer = () => {
         {isDesktop && <Social />}
       </div>
       <div className='footer__section--copy'>
-        <p>Copyright © BLempereur - All Rights Reserved Worldwide.</p>
+        <p>
+          Copyright © Keep on Flowering, LLC - All Rights Reserved Worldwide.
+        </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
