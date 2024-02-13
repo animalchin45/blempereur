@@ -28,9 +28,6 @@ const Footer = () => {
         <a className='p-link' href='mailto:barblemp32@gmail.com'>
           barblemp32@gmail.com
         </a>
-        <a className='p-link' href='http://eepurl.com/hHA2NP'>
-          Join my newsletter
-        </a>
         {isDesktop && <Social />}
       </div>
       <div className='footer__section--copy'>
