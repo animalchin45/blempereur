@@ -14,129 +14,133 @@ $xl-font-mobile: 3rem;
 // font families
 
 @font-face {
-    font-family: 'Antic Didone';
-    src: url('../fonts/AnticDidone-Regular.eot');
-    src: url('../fonts/AnticDidone-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AnticDidone-Regular.woff2') format('woff2'),
-        url('../fonts/AnticDidone-Regular.woff') format('woff'),
-        url('../fonts/AnticDidone-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Antic Didone';
+  src: url('../fonts/AnticDidone-Regular.eot');
+  src: url('../fonts/AnticDidone-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/AnticDidone-Regular.woff2') format('woff2'),
+    url('../fonts/AnticDidone-Regular.woff') format('woff'),
+    url('../fonts/AnticDidone-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/OpenSans-Regular.eot');
-    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-        url('../fonts/OpenSans-Regular.woff') format('woff'),
-        url('../fonts/OpenSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 // font settings
 
 body {
-    color: $color-black;
-    font-family: "Open Sans", sans-serif;
-    font-size: $xs-font-size;
+  color: $color-black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: $xs-font-size;
 }
 
 nav {
-    font-size: $sm-font-size;
+  font-size: $sm-font-size;
 }
 
 h1 {
-    font-family: "Antic Didone", serif;
-    font-size: $xl-font-size;
+  font-family: 'Antic Didone', serif;
+  font-size: $xl-font-size;
 }
 
 h2 {
-    font-family: "Antic Didone", serif;
-    font-size: $lg-font-size;
+  font-family: 'Antic Didone', serif;
+  font-size: $lg-font-size;
 }
 
 h3 {
-    font-size: $md-font-size;
+  font-size: $md-font-size;
 }
 
 h4 {
-    font-size: $sm-font-size;
+  font-size: $sm-font-size;
 }
 
 p {
-    font-size: $xs-font-size;
+  font-size: $xs-font-size;
 }
 
 i {
-    font-size: $lg-font-size;
+  font-size: $lg-font-size;
 }
 
 button {
-    font-family: "Open Sans", sans-serif;
-    font-size: $sm-font-size;
+  font-family: 'Open Sans', sans-serif;
+  font-size: $sm-font-size;
 }
 
 input {
-    font-family: "Open Sans", sans-serif;
-    font-size: $sm-font-size;
+  font-family: 'Open Sans', sans-serif;
+  font-size: $sm-font-size;
 }
 
 textarea {
-    font-family: "Open Sans", sans-serif;
-    font-size: $sm-font-size;
+  font-family: 'Open Sans', sans-serif;
+  font-size: $sm-font-size;
 }
 
 .header {
-
-    &__logo {
-
-        & h1 {
-            font-size: $md-font-size;
-        }
-
-        & h2 {
-            font-size: $sm-font-size;
-        }
+  &__logo {
+    & h1 {
+      font-size: $md-font-size;
     }
+
+    & h2 {
+      font-size: $sm-font-size;
+    }
+  }
 }
 
 .hero {
-
-    &__welcome {
-
-        &--brand {
-            font-family: "Antic Didone", serif;
-        }
+  &__welcome {
+    &--brand {
+      font-family: 'Antic Didone', serif;
     }
+  }
 }
 
 .testimonial {
+  &--quote {
+    font-style: italic;
+  }
 
-    &--quote {
-        font-style: italic;
-    }
+  & p {
+    font-size: $xxs-font-size;
+  }
 }
 
 .footer__section--copy p {
-    font-size: $xxs-font-size;
+  font-size: $xxs-font-size;
 }
 
 // Font Effects
 
 .shadow-white {
-    text-shadow: $text-shadow-white;
+  text-shadow: $text-shadow-white;
 }
 
 @media (max-width: $second-break) {
-    h1 {
-        font-size: $xl-font-mobile;
-    }
-    
-    h2 {
-        font-size: $lg-font-mobile;
-    }
+  h1 {
+    font-size: $xl-font-mobile;
+  }
+
+  h2 {
+    font-size: $lg-font-mobile;
+  }
+
+  h4 {
+    font-size: $xs-font-size;
+  }
 }

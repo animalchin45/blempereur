@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Testimonial from './Testimonial'
-import { useMediaQuery } from 'react-responsive'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Testimonial from './Testimonial';
+import { useMediaQuery } from 'react-responsive';
 
-import { barbaraSquare, orchidHero, orchidHeroMobile } from '../../img/index'
+import { barbaraSquare, orchidHero, orchidHeroMobile } from '../../img/index';
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 1200px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 1200px)' });
 
   return (
     <section
@@ -36,9 +36,9 @@ const Hero = () => {
           <button className='btn'>Start Now</button>
         </Link>
       </div>
-      <Testimonial />
+      {/* <Testimonial /> */}
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
