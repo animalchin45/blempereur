@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import Quote from '../../img/quote.svg';
 
 const Testimonial = ({ name, testimonial }) => {
-  const isDesktop = useMediaQuery({ query: '(min-width: 800px)' });
+  const isDesktop = useMediaQuery({ query: '(min-width: 860px)' });
 
   return (
     <div className='testimonial'>
