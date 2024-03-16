@@ -67,15 +67,10 @@
 
     &__logo {
       margin-bottom: $margin-medium;
-      transform: translateX(2rem);
 
       &--title {
         line-height: 3.2rem;
       }
-    }
-
-    &__welcome {
-      transform: translateX(-2rem);
     }
   }
 }

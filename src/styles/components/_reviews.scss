@@ -1,17 +1,13 @@
 .reviews {
-  align-items: center;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  justify-content: center;
   padding: $padding-medium;
 
-  &__header {
-    grid-row: 1 / 2;
-    grid-column: 3 / 5;
+  &__container > div:not(:last-child) {
+    border-bottom: 1px solid $color-gray-light;
   }
+}
 
-  &__content {
-    grid-row: 2 / 3;
-    grid-column: col-start 2 / col-end 7;
+@media (max-width: $third-break) {
+  .reviews {
+    padding: $padding-small;
   }
 }

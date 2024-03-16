@@ -20,8 +20,8 @@ const Home = () => {
       {isDesktop && <Services />}
       <RenderArticles articles={articles} />
       <div className='reviews'>
-        <h3 className='reviews__header'>Client Reviews</h3>
-        <div className='reviews__content'>{renderedReviews}</div>
+        <h3>Client Reviews</h3>
+        <div className='reviews__container'>{renderedReviews}</div>
       </div>
     </div>
   );
