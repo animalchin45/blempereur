@@ -1,13 +1,12 @@
 .testimonial {
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  height: max-content;
+  display: flex;
   justify-items: center;
+  // padding: $padding-large;
 
   &__text {
     margin: $margin-medium;
-    width: 100%;
+    max-width: 100%;
 
     & h4 {
       margin-bottom: $margin-small;
@@ -15,20 +14,22 @@
   }
 }
 
-@media (max-width: $second-break) {
-  .testimonial {
-    grid-template-columns: 1fr 75% 1fr;
-  }
-}
+// @media (max-width: $second-break) {
+//   .testimonial {
+//     grid-template-columns: 1fr 75% 1fr;
+//   }
+// }
 
-@media (min-width: $third-break) and (max-width: $second-break) {
-  .testimonial {
-    grid-template-columns: 1fr 75% 1fr;
-  }
-}
+// @media (min-width: $third-break) and (max-width: $second-break) {
+//   .testimonial {
+//     grid-template-columns: 1fr 75% 1fr;
+//   }
+// }
 
 @media (max-width: $third-break) {
   .testimonial {
-    grid-template-columns: 100%;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-gray-light;
+    }
   }
 }

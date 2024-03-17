@@ -1,13 +1,20 @@
 .reviews {
   padding: $padding-medium;
 
-  &__container > div:not(:last-child) {
-    border-bottom: 1px solid $color-gray-light;
+  &__container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 50% 50%;
   }
 }
 
 @media (max-width: $third-break) {
   .reviews {
     padding: $padding-small;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
