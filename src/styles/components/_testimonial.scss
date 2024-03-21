@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   justify-items: center;
-  // padding: $padding-large;
+  max-width: 50rem;
 
   &__text {
     margin: $margin-medium;
@@ -14,20 +14,16 @@
   }
 }
 
-// @media (max-width: $second-break) {
-//   .testimonial {
-//     grid-template-columns: 1fr 75% 1fr;
-//   }
-// }
-
-// @media (min-width: $third-break) and (max-width: $second-break) {
-//   .testimonial {
-//     grid-template-columns: 1fr 75% 1fr;
-//   }
-// }
+@media (min-width: $third-break) and (max-width: $second-break) {
+  .testimonial {
+    max-width: 35rem;
+  }
+}
 
 @media (max-width: $third-break) {
   .testimonial {
+    max-width: 100%;
+
     &:not(:last-child) {
       border-bottom: 1px solid $color-gray-light;
     }
